@@ -1,0 +1,25 @@
+// hide the h1 tag
+.h1-hide {
+  width: 1px;
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+}
+
+// difind display classes
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+// difind justify-content classes
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}

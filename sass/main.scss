@@ -1,7 +1,5 @@
 @import "base/reset";
-@import "pages/home";
-@import "utils/mixins";
+@import "base/default";
+@import "pages/index";
+@import "utils/helpers";
 
-h1 {
-  @include pc;
-}
