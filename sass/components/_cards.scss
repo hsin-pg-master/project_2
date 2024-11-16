@@ -1,0 +1,57 @@
+@import "../utils/mixins";
+
+.card-container {
+  margin: 1rem auto;
+  max-width: 1024px;
+  display: flex;
+
+  .card {
+    background-color: rgb(161, 255, 255);
+    border-radius: 1rem;
+    text-align: center;
+    margin: 10px 10px;
+
+    img {
+      border-radius: 1rem 1rem 0rem 0rem;
+      max-width: 100%;
+    }
+
+    .card-body {
+      h5 {
+        font-size: 2rem;
+        padding: 1rem;
+      }
+
+      p,
+      button {
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+
+      button {
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  @include phone {
+    flex-wrap: wrap;
+
+    .card {
+      max-width: 80%;
+    }
+  }
+
+  @include pad {
+    .card {
+      max-width: 33%;
+    }
+  }
+
+  @include pc {
+    .card {
+      max-width: 33%;
+    }
+  }
+}
