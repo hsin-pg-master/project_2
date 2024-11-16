@@ -1,0 +1,7 @@
+@import "base/reset";
+@import "pages/home";
+@import "utils/mixins";
+
+h1 {
+  @include pc;
+}
