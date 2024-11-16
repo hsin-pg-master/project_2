@@ -98,7 +98,7 @@ header #sidebar-active:checked ~ #overlay {
     top: 0;
     right: -100%;
     z-index: 10;
-    transition: 0.2s ease-out;
+    transition: 0.1s ease-out;
   }
   header .links-container .sidebar-links,
   header .links-container .back-link {
@@ -128,6 +128,46 @@ header #sidebar-active:checked ~ #overlay {
   }
   header .back-link {
     display: none;
+  }
+}
+
+.carousel {
+  position: relative;
+}
+.carousel .carousel-indicators {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  translate: -50% -50%;
+}
+.carousel .carousel-indicators > a {
+  margin: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  background-color: rgb(50, 50, 50);
+}
+.carousel .carousel-indicators > a:hover {
+  background-color: rgb(10, 10, 10);
+}
+.carousel .carousel-inner {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  align-items: baseline;
+}
+.carousel .carousel-inner img {
+  max-width: 100%;
+  height: auto;
+  scroll-snap-align: start;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 1024px) {
+  .carousel {
+    font-size: 20px;
+    background-color: rgb(0, 0, 200);
+    margin: 0 auto;
+    width: 1024px;
   }
 }
 
