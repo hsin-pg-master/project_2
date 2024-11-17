@@ -66,6 +66,18 @@ a:hover {
   background-color: rgb(24, 0, 131);
 }
 
+.to-top {
+  position: fixed;
+  padding: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: rgb(169, 182, 51);
+  border-radius: 5px;
+}
+.to-top:hover {
+  background-color: rgb(248, 0, 0);
+}
+
 header {
   padding: 1rem;
   align-items: center;
@@ -226,6 +238,10 @@ header #sidebar-active:checked ~ #overlay {
   .card-container .card {
     max-width: 33%;
   }
+}
+
+footer {
+  padding: 1rem;
 }
 
 .h1-hide {
